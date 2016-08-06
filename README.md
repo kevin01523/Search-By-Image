@@ -1,126 +1,126 @@
 Search-By-Image
 ===============
 
-Search By Image | 以图搜图
+Search By Image | attempt to search map
 
-一个以图搜图的脚本。通过该脚本，你可以快速地搜索图片。
+Attempt to search a script map. With this script, you can quickly search for pictures.
 
-备用下载地址：
-> https://greasyfork.org/scripts/2998-search-by-image
-> 
-> http://ext.ccloli.com/search-by-image/search-by-image.user.js
+Alternate Download:
+> Https://greasyfork.org/scripts/2998-search-by-image
+>
+> Http://ext.ccloli.com/search-by-image/search-by-image.user.js
 
-使用方法：
-> * 搜索图片：按住快捷键（默认设置为 Ctrl 键），同时在图片上点击鼠标右键，在菜单中选择欲使用的搜索引擎
-> 
-> * 上传搜索：按住快捷键（默认设置为 Ctrl 键），同时在非图片上点击鼠标右键，在菜单中上传图片后选择欲使用的搜索引擎（1.4 版本）<br>传输过程中点击进度条取消上传，上传后图片临时保存于中转服务器上供搜索引擎抓取<br>上传方式包括以下几种（仅支持单个文件）
-> 
-> > * 点击“上传图片并搜索”并选择文件
-> > 
-> > * 拖拽文件至菜单内
-> > 
-> > * 按下 Ctrl + V 粘贴剪贴板内图片（暂不支持 Firefox，原因不明）
-> > 
-> > * 另外搜索 base64 形式图片也需要上传
-> 
-> * 设置脚本：按住快捷键（默认设置为 Ctrl 键），同时点击鼠标右键，在菜单中选择“Setting”打开设置界面<br>或在用户脚本命令中选择“Search By Image Setting”打开设置界面<br>在设置页面中可以更改、添加、删除搜索引擎，进行“多搜”及快捷键的配置和重置设置
-> 
-> > * 更改搜索引擎：“名称”栏指定搜索引擎名称，“地址”栏指定搜索引擎调用地图（图片地址以 {%s} 代替）
-> > 
-> > * 添加搜索引擎：点击“Add Item”按钮可添加搜索引擎
-> > 
-> > * 删除搜索引擎：点击搜索引擎右侧的“×”可删除该搜索引擎
-> > 
-> > * 设置多搜　　：勾选“多搜”复选框并保存后，在搜索图片时点击“All”将打开所有勾选“多搜”的搜索引擎
-> > 
-> > * 更改快捷键　：在左下角的“HotKey”处可修改呼出搜索菜单的快捷键
-> > 
-> > * 重置设置　　：点击“Reset”按钮可重置所有设置（不可逆）
-> > 
-> > * 保存设置　　：点击“Save”按钮可保存设置
-> 
-> * 修改中转服务器：在脚本内 47 行（可能有变动）找到 server_url，按需进行修改（更新后也需重新设置），相关介绍已列在脚本中
-> 
-> 各界面的使用请参考下面的预览图
+Instructions:
+> * Search Image: Hold down the shortcut key (default Ctrl key) while clicking the right mouse button on the image, select To use the search engine in the menu
+>
+> * Upload Search: Hold down the shortcut key (default Ctrl key), while the non-image Click the right mouse button and select wish to use a search engine (version 1.4) upload pictures in the menu after clicking <br> transit schedule cancellation upload, after upload pictures stored in temporary transit server for search engines to crawl <br> uploads include the following (only support a single file)
+>
+>> * Click on "upload photos and search for" and select the file
+>>
+>> * Drag and drop files to the menu within
+>>
+>> * Press Ctrl + V to paste the clipboard in the image (not support Firefox, for unknown reasons)
+>>
+>> * Also search base64 form also need to upload image
+>
+> * Setup script: Hold down the shortcut key (default Ctrl key) while clicking the right mouse button and select the menu "Setting" to open the settings screen <br> or select "Search By Image Setting" in the user script command set to open <br> interface can be changed in the settings page, add, delete, search engines, configuration and reset settings "multi search" and shortcuts
+>
+>> * Change search engine: "Name" field to specify the name of the search engine, "Address" field specified search engine by calling the map (picture address {% s} instead)
+>>
+>> * Add a search engine: Click the "Add Item" button to add a search engine
+>>
+>> * Remove search engine: Click the right side of the search engine "×" to delete the search engine
+>>
+>> * Set Multi-search: Check the "Multi Search" box and saved, the search picture click "All" will open all check the "Multi Search" search engine
+>>
+>> * Change Shortcut: In the "HotKey" at the lower left corner of the search can be modified exhaled menu shortcuts
+>>
+>> * Reset settings: Click the "Reset" button to reset all settings (irreversible)
+>>
+>> * Save Settings: Click the "Save" button to save your settings
+>
+> * Modify the transit server: In the script, line 47 (subject to change) find server_url, needed to be modified (after the update also need to re-set), related presentations are listed in the script
+>
+> Using each interface, please refer to the following preview
 
-默认支持的网站：
+Default support Web site:
 > * Google
-> * 百度识图
-> * 百度图片
+> * Baidu knowledge map
+> * Baidu Photos
 > * Bing
 > * TinEye
 > * Яндекс (Yandex)
-> * 搜狗
-> * 360
+> * Sogou
+> 360 *
 > * SauceNAO
 > * IQDB
 > * 3D IQDB
 
-内部测试：
+Internal Test:
 > * 864907600cc (ccloli)
-> * 文科 (wenketel)
+> * Arts (wenketel)
 
-本脚本基于 GPLv3 协议开源 http://www.gnu.org/licenses/gpl.html‎
+The script is based on the open source GPLv3 agreement http://www.gnu.org/licenses/gpl.html
 
-![搜索菜单](https://cloud.githubusercontent.com/assets/8115912/3623778/b6d76498-0e53-11e4-96a0-09488c053e44.png)
-![设置界面](https://cloud.githubusercontent.com/assets/8115912/3623779/b734b490-0e53-11e4-9250-66707699db6e.png)
+! [Search menu] (https://cloud.githubusercontent.com/assets/8115912/3623778/b6d76498-0e53-11e4-96a0-09488c053e44.png)
+! [Setting screen] (https://cloud.githubusercontent.com/assets/8115912/3623779/b734b490-0e53-11e4-9250-66707699db6e.png)
 
-追加说明：
-> 首先，这个脚本只能搜索 img 标签的图片，对 css background-image 什么的话，呵呵 = =
-> 
-> 其次，由于方便设计，估计有很多网站设计图片翻页或者图片动态效果时，会在图片上方加个透明的层，这样也是获取不到图片的 = =
-> 
-> 另外，搜索贴吧内图片时，如果出现搜索的 url 为 base64 的情况，请看此贴：http://tieba.baidu.com/p/3145502558
-
-更新历史： 
-> 2015.12.27 1.4.11 GreasyFork feedback [#7547](https://greasyfork.org/zh-CN/forum/discussion/7547/x) 搜索菜单在超出窗口可视大小时对其下边缘，按住热键时点击搜索菜单将在后台标签页打开，未按下时将在前台标签页打开
+Additional explanation:
+> First, the script can only search img tag images for css background-image anything, huh = =
 >
-> 2015.12.02 1.4.10 Fixed GreasyFork feedback [#6806](https://greasyfork.org/en/forum/discussion/6806/x) (not working on old Firefox), update most of default search engines url to HTTPS
-> 
-> 2015.08.15 1.4.9 添加并没有什么用的多语言支持，添加并没有什么用的自定义上传服务器设定，修复 1.4.6 修复菜单栏错位导致菜单栏错位的问题
-> 
-> 2015.05.01 1.4.8 修复百度图片搜索不可用的问题（See issue #3 ）
-> 
-> 2015.04.06 1.4.7 修复在部分可视化编辑器（eg. MDN WYSIWYG editor）中出现遗留菜单的 bug（Thanks to lychichem, see issue http://tieba.baidu.com/p/3682475061 ）
-> 
-> 2015.04.05 1.4.6 修复当 body 存在 margin 时菜单栏错位的问题，修复上一版本鼠标经过样式并未生效的问题，Яндекс (Yandex) 的默认名称改为 Yandex
-> 
-> 2014.09.05 1.4.5 添加鼠标经过选项之样式（我承认我懒了 OTL）
-> 
-> 2014.08.14 1.4.4 修复未呼出面板时仍进行关闭面板的操作，尝试性修复 GM 2.x 下 GM_registerMenuCommand 冲突
-> 
-> 2014.07.26 1.4.3 添加中转上传服务器（Thanks to Retaker），修改上传服务器设置方式，尝试性修复 Firefox 无法粘贴上传的问题
-> 
-> 2014.07.18 1.4.2 修复在非图片上呼出搜索菜单时无法点击设置按钮的问题
-> 
-> 2014.07.06 1.4.1.1 修复无法上传的 bug
-> 
-> 2014.07.06 1.4.1 去除弹窗通知（在 Firefox 下可能会频繁弹出），添加其他中转上传服务器（需手动修改脚本）
-> 
-> 2014.07.06 1.4 支持上传图片搜索，支持 base64 图片搜索（中转上传）
-> 
-> 2014.07.05 1.3.8 规范语法，更改多搜时搜索引擎打开顺序，添加 base64 地址判断并拒绝搜索 base64 形式的图片（因为已知搜索引擎均不支持）
-> 
-> 2014.07.04 1.3.7 尝试性修复 Chrome Tampermonkey 下与其他监听鼠标操作的脚本的冲突问题
-> 
-> 2014.07.04 1.3.6 添加 360 和 3D IQDB，修复某标签页修改设置后在其他标签页设置不更新的问题（该版本会覆盖设置）
-> 
-> 2014.07.04 1.3.5 修改错误的标题
-> 
-> 2014.07.04 1.3.4 脚本正式发布
-> 
-> 2014.07.04 1.3.3 修复搜索菜单定位不准确的问题
-> 
-> 2014.07.04 1.3.2 修复一些 bug
-> 
-> 2014.07.04 1.3.1 修复因未填写搜索引擎而出现空白选项的问题
-> 
-> 2014.07.03 1.3 添加设置菜单
-> 
-> 2014.07.03 1.2.1 修复一些 bug
-> 
-> 2014.07.03 1.2 添加快捷键设置（需在脚本内修改）
-> 
-> 2014.07.03 1.1 添加搜索菜单
-> 
-> 2014.07.03 1.0 脚本开始编写，并完成基本功能
+> Secondly, because facilitate the design, it is estimated there are a lot of web design page image or picture dynamic effect, it will add a transparent layer above the image, this is also not get the picture = =
+>
+> In addition, when searching paste it in the picture, if you search the url situation appears to base64, see this post: http: //tieba.baidu.com/p/3145502558
+
+Update History:
+> 2015.12.27 1.4.11 GreasyFork feedback [# 7547] (https://greasyfork.org/zh-CN/forum/discussion/7547/x) search menu in the window beyond the visual size of its lower edge, press and hold click Search menu hotkey will open in a background tab, the tab will open in the foreground when pressed
+>
+> 2015.12.02 1.4.10 Fixed GreasyFork feedback [# 6806] (https://greasyfork.org/en/forum/discussion/6806/x) (not working on old Firefox), update most of default search engines url to HTTPS
+>
+> 2015.08.15 1.4.9 add multi-language support, and there is no use, there is nothing to add and use a custom upload server settings, repair repair 1.4.6 Menu Bar Menu Bar dislocation dislocation cause problems
+>
+> 2015.05.01 1.4.8 fixes Baidu Image Search is unavailable problems (See issue # 3)
+>
+> 2015.04.06 1.4.7 fixes in some visual editor (eg. MDN WYSIWYG editor) bug legacy menu appears (Thanks to lychichem, see issue http://tieba.baidu.com/p/3682475061)
+>
+> 2015.04.05 1.4.6 fixes exist when the body margin menu bar misalignment problem, repair the problem on a version of the mouse after the style has not entered into force, Яндекс (Yandex) default name to Yandex
+>
+> 2014.09.05 1.4.5 Adds mouse through the style options (I admit I'm lazy OTL)
+>
+> 2014.08.14 1.4.4 fixes still be closed when not in operation panel outgoing panel tries to repair GM 2.x under GM_registerMenuCommand conflict
+>
+> 2014.07.26 1.4.3 Adding transit upload server (Thanks to Retaker), modify the upload server is set up, Firefox tries to repair the problem can not be pasted uploaded
+>
+> 2014.07.18 1.4.2 fixes can not click the Settings button in the non-image problem exhaled search menu
+>
+> 2014.07.06 1.4.1.1 fixes the bug can not be uploaded
+>
+> 1.4.1 2014.07.06 pop removal notice (may frequently pop up in Firefox), add additional transit upload server (need to manually modify the script)
+>
+> 2014.07.06 1.4 supports upload image search, image search support base64 (transit upload)
+>
+> 2014.07.05 1.3.8 specification syntax changes and more search engines search the opening sequence, add base64 base64 address judgment and refused to search form images (known as search engines do not support)
+>
+> 2014.07.04 1.3.7 tries to repair the conflict under Chrome Tampermonkey script with other listeners mouse actions
+>
+> Add 360 2014.07.04 1.3.6 and 3D IQDB, repair a tab settings After modifying the settings in other tabs are not updated question (this version will overwrite the settings)
+>
+> 2014.07.04 1.3.5 modification of the wrong title
+>
+> 2014.07.04 Script 1.3.4 released
+>
+> Search menu 2014.07.04 1.3.3 fixes the problem of inaccurate positioning
+>
+> 2014.07.04 1.3.2 fix some bug
+>
+> 2014.07.04 1.3.1 fixes for failing to fill in a blank search engine option problems
+>
+> 2014.07.03 1.3 Add setting menu
+>
+> 2014.07.03 1.2.1 fix some bug
+>
+> 1.2 2014.07.03 added shortcut set (to be modified within the script)
+>
+> 2014.07.03 1.1 Add search menu
+>
+> 1.0 2014.07.03 start writing scripts, and complete the basic functions
